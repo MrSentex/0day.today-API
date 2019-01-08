@@ -1,4 +1,3 @@
-
 #############################
 # 0day.today unofficial api #
 #       By MrSentex         #
