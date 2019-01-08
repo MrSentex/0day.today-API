@@ -136,12 +136,12 @@ class Api0day(object):
 
                 date = self.FixString(rows[0].getText())
                 desc = self.FixString(rows[1].getText())
-                type = self.FixString(rows[2].getText())
+                platform = self.FixString(rows[2].getText())
                 price = self.FixPrice(rows[9].getText())
                 author = self.FixString(rows[10].getText())[0:self.FixString(rows[10].getText()).find("Exploits")]
                 url = rows[1].find("a", href=True)["href"].replace("/description", "")
 
-                result["response"].append({"date" : date, "desc" : desc, "type" : type, "price" : price, "author" : author, "url" : self.url+url})
+                result["response"].append({"date" : date, "desc" : desc, "platform" : platform, "price" : price, "author" : author, "url" : self.url+url})
             
             return result
         
