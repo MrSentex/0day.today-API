@@ -1,4 +1,4 @@
-# 0day.today unofficial API
+# 0day.today unofficial API | 0.1 beta
 ![Banner.png](https://raw.githubusercontent.com/MrSentex/0day.today-API/master/banner.png?token=AorkL9f8tQVCKNF6tnFOxW4LHEu_1_E4ks5cPhNmwA%3D%3D)
 
 Unofficial API for 0day.today database in Python (HTTP).
