@@ -17,7 +17,6 @@ Python dependecies:
 
 * selenium
 * bs4
-* codecs
 * unidecode
 * flask
 * colorama
