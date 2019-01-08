@@ -1,7 +1,7 @@
 <?php
 
-    function StartAPI($python_script) {
-        system("screen -S test -d -m ".$python_script);
+    function StartAPI($python_script, $ip, $port, $key="sike") {
+        system("screen -S test -d -m ".$python_script." ".$ip." ".$port." ".$key."");
     }
 
     class Api0day {
@@ -96,11 +96,7 @@
 
             $response = $this->ParseJson($response);
 
-            if ($response["status"] != "success") {
-                return array();
-            }
-
-            return $response["response"];
+            return $response;
 
         }
         
