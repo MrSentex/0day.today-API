@@ -11,6 +11,7 @@ Main dependencies:
 * Python 2.7 with PyPi (pip)
 * fontconfig and libfontconfig (Linux only)
 * screen (Linux only)
+* PhantomJS (Already in repo for windows but in linux you need to download it (https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-i686.tar.bz2))
 
 Python dependecies:
 
