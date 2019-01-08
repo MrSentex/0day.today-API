@@ -47,7 +47,7 @@ for result in results["response"]:
     print "Date: {}\nDescription: {}\nPlatform: {}\nPrice: {}\nAuthor: {}\nURL: {}".format(result["date"], result["desc"], result["platform"], result["price"], result["author"], result["url"])
     print "======================"
 ```
-#### PHP (WARNING: Linux only) (See ExtraCode/0day.php)
+#### PHP (See ExtraCode/0day.php)
 ```php
 <?php
 
@@ -57,7 +57,8 @@ for result in results["response"]:
     $port = "5000";
 
     // $key = "1234" # Default: "sike"
-
+    
+    # WARNING: This function is working only in linux
     StartApi("/home/user/0day.today-API/start.py", $ip, $port); # This function only need to be exec one time (Multiple exec can create bugs) | StartApi("/home/user/0day.today-API/start.py", $ip, $port, $key);
 
     $ApiToday = new Api0day($ip, $port);  # $ApiToday = new Api0day($ip, $port, $key); | If an error ocurred with the connection the script will create an exception
