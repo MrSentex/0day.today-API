@@ -82,11 +82,14 @@ First of all you need to start the api with the following command: `python api.p
 
 The api has two functional url:
 
-* http://<ip>:<port>/test-conn?key=<key>
-  This url will allow you to verify that the key is valid and that the API responds.
-  Response:
-  `{"status" : "success"}` / `{"status" : "fail", "exception" : "Some excpetion here"}`
-* http://<ip>:<port>/search?key=<key>&search_param=<param>
-  Esta url es la principal de la API y es la que te permite buscar en 0day.today. Se sugiere poner un tiempo de espera alto ya que la conexión a 0day.today es lenta (cortesia de 0day.today).
-    Response:
-  `{"status" : "success", "response" : [{"date" : "2014-03-12", "desc" : "Sike, thats the wrong number", "platform" : "multiple", "price" : "free", "author" : "MrSentex", "url" : "https://0day.today/exploit/<exploit-id>"}, ...]}` / `{"status" : "fail", "exception" : "Some exception here"}`
+* http://ip:port/test-conn?key=key 
+  This url will allow you to verify that the key is valid and that the API responds.  
+  Response: `{"status" : "success"}` / `{"status" : "fail", "exception" : "Some excpetion here"}`  
+  
+* http://ip:port/search?key=key&search_param=param  
+  This url is the main one of the API and it is the one that allows you to search in 0day.today. It is suggested to set a high wait time since the connection to 0day.today is slow (courtesy of 0day.today).  
+    Response: 
+    ```json
+    {"status" : "success", "response" : [{"date" : "2014-03-12", "desc" : "Sike, thats the wrong number", "platform" : "multiple", "price" : "free", "author" : "MrSentex", "url" : "https://0day.today/exploit/<exploit-id>"}]}
+    ```
+  or if the Api fail: `{"status" : "fail", "exception" : "Some exception here"}`
