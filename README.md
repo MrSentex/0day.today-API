@@ -78,7 +78,7 @@ for result in results["response"]:
 ?>
 ```
 #### Requests
-First of all you need to start the api with the following command: `python api.py and ip port key` (Key is optional and seted by default if not specified as "sike"). After seeing that everything works correctly, only the easiest part remains.
+First of all you need to start the api with the following command: `python api.py ip port key` (Key is optional and seted by default if not specified as "sike"). After seeing that everything works correctly, only the easiest part remains.
 
 The api has two functional url:
 
