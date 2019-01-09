@@ -1,7 +1,7 @@
 # 0day.today unofficial API | 0.2 beta
 ![Banner.png](https://raw.githubusercontent.com/MrSentex/0day.today-API/master/banner.png?token=AorkL9f8tQVCKNF6tnFOxW4LHEu_1_E4ks5cPhNmwA%3D%3D)
 
-Unofficial API for 0day.today database in Python (HTTP).
+Unofficial API for 0day.today database.
 
 This API is not affiliated in any way with "0day.today" and its operation may be against the terms and conditions of "0day.today", therefore the execution of the API will be carried out under the legal responsibility of the user and MrSentex will be uncharged from any illegal use of the API.
 
