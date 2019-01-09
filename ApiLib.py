@@ -90,7 +90,7 @@ class api_0day_today:
                 author = self.fixString(rows[10].getText())[0:self.fixString(rows[10].getText()).find("Exploits")]
                 url = rows[1].find("a", href=True)["href"].replace("/description", "")
 
-                result.append({"date" : date, "desc" : desc, "platform" : platform, "price" : price, "author" : author, "url" : self.url+url})
+                result.append({"date" : date, "desc" : desc, "platform" : platform, "price" : price, "author" : author, "url" : "https://0day.today/"+url})
         
             return {"status" : "success", "response" : result}
 
