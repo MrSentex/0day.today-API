@@ -1,5 +1,3 @@
-selenium
+requests
 bs4
 unidecode
-flask
-colorama
