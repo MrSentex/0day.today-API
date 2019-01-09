@@ -59,9 +59,9 @@ class api_0day_today:
         if price.startswith("free"):
             return "free"
 
-        btc = price[price.find("BTC")-2:price.find("BTC")-1]
-        gold = price[price.find("GOLD")-2:price.find("GOLD")-1]
-
+        btc = price[price.find("for")+4:price.find("BTC")-1]
+        pre_gold = price[price.find("BTC")+4:len(price)]
+        gold = pre_gold[pre_gold.find("for")+4:pre_gold.find("GOLD")-1]
         return "{} BTC or {} GOLD".format(btc, gold)
 
     def search(self, param):
