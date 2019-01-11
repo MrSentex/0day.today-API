@@ -5,6 +5,10 @@ Unofficial API for 0day.today database.
 
 This API is not affiliated in any way with "0day.today" and its operation may be against the terms and conditions of "0day.today", therefore the execution of the API will be carried out under the legal responsibility of the user and MrSentex will be uncharged from any illegal use of the API.
 
+#### Special thanks: 
+
+* @virtualminds (Telegram)
+
 ## Dependencies
 
 All you need to use the API and start to work with it.
