@@ -60,7 +60,7 @@ PHP modules needed:
 
 * php-curl
 * php-xml
-* parser.php (Alredy in repo from http://simplehtmldom.sourceforge.net/)
+* parser.php (Already in repo, downloaded from http://simplehtmldom.sourceforge.net/)
 
 The first two packages are installed through `apt`, `yum` or any other linux package installer. In the case of windows `php-xml` is already included in the php core and for the install of `php-curl` is necessary to modify the php.init file and possibly download php_curl.dll .
 
