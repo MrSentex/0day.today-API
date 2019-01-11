@@ -49,3 +49,47 @@ else:
 
     print "[ERROR] {}".format(results["exception"])
 ```
+
+### PHP
+
+Dependencies needed to use the API with PHP
+
+* PHP (5/7)
+
+PHP modules needed:
+
+* php-curl
+* php-xml
+* parser.php (Alredy in repo from http://simplehtmldom.sourceforge.net/)
+
+The first two packages are installed through `apt`, `yum` or any other linux package installer. In the case of windows `php-xml` is already included in the php core and for the install of `php-curl` is necessary to modify the php.init file and possibly download php_curl.dll .
+
+#### Usage
+```php
+<?php
+
+    include("ApiLib.php");
+
+    $api_0day_today = new api_0day_today();
+
+    $search_param = "ssh";
+
+    $search = $api_0day_today->search($search_param);
+
+    if ($search["status"] === "fail") {
+        printf("[Error] ".$search["exception"]."\n"); die();
+    }
+
+    foreach($search["response"] as $hit) {
+        printf("====== Exploit ======\n");
+        printf("Date: %s\n", $hit["date"]);
+        printf("Description: %s\n", $hit["desc"]);
+        printf("Platform: %s\n", $hit["platform"]);
+        printf("Price: %s\n", $hit["price"]);
+        printf("Author: %s\n", $hit["author"]);
+        printf("URL : %s\n", $hit["url"]);
+        printf("======================\n");
+    }
+
+?>
+```
